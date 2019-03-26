@@ -14,8 +14,12 @@ Exemple d'entrée:
   [-10, 5, 15, 20]
 
  */
-
-function getMultiplesOf(numbers, n) {
+//let newTab = [-12, -10, -7, -1, 5, 8, 11, 15, 20, 27]
+//let n = 5
+const getMultiplesOf = (table, n) => {
+  let i = table.indexOf(n)
+  let truc = table.filter( (nbre) => nbre%table[i] == 0)
+  return truc
 }
 
 // Ne pas modifier l'export

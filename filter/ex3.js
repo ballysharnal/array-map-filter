@@ -22,9 +22,22 @@ Sortie attendue:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
  */
+/*let table =   [
+  'Bran Stark',
+  'Cersei Lannister',
+  'Sandor Clegane',
+  'Arya Stark',
+  'Yara Greyjoy',
+  'Sansa Stark'
+]*/
 
-function keepStarks(names) {
+const keepStarks = names => {
+  let newMap = names.map( bla => bla.split(' '))
+  let kept = newMap.filter( (truc) => truc[1] == 'Stark')
+  kept = kept.map(bla => bla.join(' '))
+  return kept
 }
-
+//let machin = keepStarks(table)
+//console.log(machin)
 // Ne pas modifier l'export
 module.exports = keepStarks;

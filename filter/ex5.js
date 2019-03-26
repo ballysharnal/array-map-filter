@@ -38,7 +38,8 @@ Exemple d'entrée:
 
  */
 
-function searchWordFilter(items, search) {
+const searchWordFilter = (items, search) => {
+  
 }
 
 // Ne pas modifier l'export
