@@ -23,8 +23,8 @@ où R est le rayon donné en entrée, C et S les valeurs que tu dois calculer.
 
 Exemple de tableau d'entrée :
 
-[1, 3, 4.5, 7]
-
+let table = [1, 3, 4.5, 7]
+/*
 Tableau de sortie correspondant (toFixed transforme les nombres en chaînes)
 
 [
@@ -51,8 +51,18 @@ Tableau de sortie correspondant (toFixed transforme les nombres en chaînes)
 ]
 */
 
-function getCirclesProperties(radiuses) {
-}
+const getCirclesProperties = radiuses => radiuses.map(bla => {
+  let truc = bla;
+  bla = {
+    radius: radiuses[radiuses.indexOf(bla)],
+    circumference: 2*Math.PI*radiuses[radiuses.indexOf(bla)],
+    surface: Math.PI * radiuses[radiuses.indexOf(bla)]*radiuses[radiuses.indexOf(bla)]
+  };
+  //console.log(bla)
+  return bla
+})
+/*let machin = getCirclesProperties(table);
+console.log(machin)*/
 
 
 

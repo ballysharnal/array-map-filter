@@ -15,7 +15,8 @@ en fonction de la valeur de la propriété `isVegetarian`, en remplaçant FOOD
 par le nom du produit
 
 Exemple d'entrée:
-  [
+
+let table = [
     {
       food: 'Bacon',
       isVegetarian: false
@@ -32,7 +33,7 @@ Exemple d'entrée:
       food: 'Chick Pea',
       isVegetarian: true
     }
-  ]
+]
 En sortie: [
   'Bacon is not suitable for vegetarians',
   'Sausage is not suitable for vegetarians',
@@ -42,8 +43,10 @@ En sortie: [
 
  */
 
-function getFoodCategories(foods) {
-}
+const getFoodCategories = foods => foods.map(truc => truc.isVegetarian==false ? 
+  truc.food + ' is not suitable for vegetarians' 
+  : truc.food + ' is suitable for vegetarians');
+
 
 
 
