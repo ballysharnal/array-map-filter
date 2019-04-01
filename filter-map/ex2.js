@@ -30,8 +30,8 @@ const getCampusesTeachingReact = campuses => {
   let filtered = campuses.filter(bla => bla.curriculums.indexOf())
 }
 
-let machin = getCampusesTeachingReact(table);
-console.log(machin)
+//let machin = getCampusesTeachingReact(table);
+//console.log(machin)
 
 
 module.exports = getCampusesTeachingReact;

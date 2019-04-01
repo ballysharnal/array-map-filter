@@ -30,11 +30,11 @@ Sortie attendue:
 
 const filterOffensiveComments = (comments, bannedWords) => {
   let newTabTempo = [];
-  newTabTempo.push(comments.filter(bla);
+  newTabTempo.push(comments.filter(bla));
   return newTabTempo;
 }
 
-let machin = filterOffensiveComments(table, mots)
-console.log(machin)
+//let machin = filterOffensiveComments(table, mots)
+//console.log(machin)
 // Ne pas modifier l'export
 module.exports = filterOffensiveComments;
