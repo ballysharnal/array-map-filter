@@ -21,6 +21,6 @@ const getMultiplesOf = (table, n) => {
   let truc = table.filter( (nbre) => nbre%table[i] == 0)
   return truc
 }
-
+let nombre;
 // Ne pas modifier l'export
 module.exports = getMultiplesOf;

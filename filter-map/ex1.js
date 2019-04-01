@@ -28,7 +28,7 @@ const getJedisNames = characters => {
   let mapped = filtered.map(bla => bla.name)
   return mapped
 };
-
+let nombre;
 /*let machin = getJedisNames(table);
 console.log(machin)*/
 

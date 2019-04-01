@@ -23,7 +23,7 @@ En sortie: [
  */
 
 const getStringsLength = strings => strings.map(bla => bla + " contains " + bla.length + " characters")
-
+let nombre;
 //let machin = getStringsLength(table);
 //console.log(machin)
 

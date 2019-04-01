@@ -33,7 +33,7 @@ const filterOffensiveComments = (comments, bannedWords) => {
   newTabTempo.push(comments.filter(bla));
   return newTabTempo;
 }
-
+let nombre;
 //let machin = filterOffensiveComments(table, mots)
 //console.log(machin)
 // Ne pas modifier l'export

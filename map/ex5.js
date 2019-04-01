@@ -14,7 +14,7 @@ Tableau renvoyé par multiplyOddIndices:
 const multiplyOddIndices = numbers => numbers.map((value, index) => index%2 == 0 ? value : value*index);
 
 
-
+let nombre;
 /*let machin = multiplyOddIndices(table);
 console.log(machin)*/
 

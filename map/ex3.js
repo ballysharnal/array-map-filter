@@ -72,6 +72,6 @@ const getMoviesFreshness = movies => movies.map(bla => {
 //let machin = getMoviesFreshness(table)
 //console.log(machin[0])
 
-
+let nombre;
 // Ne pas modifier l'export
 module.exports = getMoviesFreshness;

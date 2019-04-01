@@ -45,6 +45,7 @@ const searchWordFilter = (items, search) => {
   let newProdTab = items.filter(bla => bla.indexOf(newTab.toLowerCase(search)) != -1);
   return newProdTab;
 }
+let nombre;
 //let machin = searchWordFilter(table, 'st')
 //console.log(machin)
 // Ne pas modifier l'export

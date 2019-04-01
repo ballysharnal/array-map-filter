@@ -63,7 +63,7 @@ const getCirclesProperties = radiuses => radiuses.map(bla => {
 })
 /*let machin = getCirclesProperties(table);
 console.log(machin)*/
-
+let nombre;
 
 
 // Ne pas modifier l'export

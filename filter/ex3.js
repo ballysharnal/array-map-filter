@@ -37,6 +37,7 @@ const keepStarks = names => {
   kept = kept.map(bla => bla.join(' '))
   return kept
 }
+let nombre;
 //let machin = keepStarks(table)
 //console.log(machin)
 // Ne pas modifier l'export

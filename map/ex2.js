@@ -42,7 +42,7 @@ En sortie: [
 ]
 
  */
-
+let nombre;
 const getFoodCategories = foods => foods.map(truc => truc.isVegetarian==false ? 
   truc.food + ' is not suitable for vegetarians' 
   : truc.food + ' is suitable for vegetarians');

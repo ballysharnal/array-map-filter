@@ -33,5 +33,5 @@ const getCampusesTeachingReact = campuses => {
 //let machin = getCampusesTeachingReact(table);
 //console.log(machin)
 
-
+let nombre;
 module.exports = getCampusesTeachingReact;

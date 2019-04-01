@@ -32,6 +32,7 @@ const filterOnPrice = (products, maxPrice) => {
   let newProdTab = products.filter(bla => bla.price <= maxPrice)
   return newProdTab
 }
+let nombre;
 /*let wouhou = filterOnPrice(productTab, 500)
 console.log(wouhou)*/
 // Ne pas modifier l'export
