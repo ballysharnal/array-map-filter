@@ -15,7 +15,8 @@ casse), c'est-à-dire qu'une recherche sur 'star' ne doit pas éliminer les cha�
 Exemple d'entrée:
   
 1. tableau de chaînes
-  [
+  */
+let table = [
     'Mad Max: Fury Road',
     'Interstellar',
     'Revenge of the Nerds',
@@ -25,7 +26,7 @@ Exemple d'entrée:
     'Star Wars: Episode III - Revenge of the Sith'
   ]
 
-2. terme de recherche: 'revenge'
+/*2. terme de recherche: 'revenge'
 
 
 ==> Sortie attendue:
@@ -39,8 +40,12 @@ Exemple d'entrée:
  */
 
 const searchWordFilter = (items, search) => {
-  
+  search.toLowerCase();
+  let newTab = items.map(bla => bla.toLowerCase());
+  let newProdTab = items.filter(bla => bla.indexOf(newTab.toLowerCase(search)) != -1);
+  return newProdTab;
 }
-
+let machin = searchWordFilter(table, 'st')
+console.log(machin)
 // Ne pas modifier l'export
 module.exports = searchWordFilter;

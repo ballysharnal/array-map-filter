@@ -8,8 +8,8 @@ d'objets décrivant des campus de la Wild Code School. Chaque campus a ces propr
 En utilisant filter puis map, la fonction doit renvoyer les villes des campus qui proposent
 un cursus JS/React.
 
-Tableau en entrée:
-[
+Tableau en entrée:*/
+let table = [
   { city: 'Bordeaux', curriculums: ['PHP/Symfony', 'JS/React'] },
   { city: 'La Loupe', curriculums: ['JS/Angular'] },
   { city: 'Lille', curriculums: ['PHP/Symfony', 'JS/React'] },
@@ -18,13 +18,20 @@ Tableau en entrée:
   { city: 'Reims', curriculums: ['JS/React'] },
   { city: 'Toulouse', curriculums: ['JEE/Android', 'JS/React'] }
 ]
-
+/*
 Sortie attendue:
 ['Bordeaux', 'Lille', 'Marseille', 'Reims', 'Toulouse']
 
 */
 
-function getCampusesTeachingReact(campuses) {
+const getCampusesTeachingReact = campuses => {
+  let truc = campuses.map(value => campuses[campuses.indexOf(value)].curriculums.join())
+  console.log(truc)
+  let filtered = campuses.filter(bla => bla.curriculums.indexOf())
 }
+
+let machin = getCampusesTeachingReact(table);
+console.log(machin)
+
 
 module.exports = getCampusesTeachingReact;

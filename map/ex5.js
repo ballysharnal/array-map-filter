@@ -6,20 +6,16 @@ Ecrire une fonction multiplyOddIndices, qui prend en entrée un tableau de nombr
 
 Il va donc falloir utiliser le 2ème argument de la fonction passée à map.
 
-Exemple de tableau d'entrée:*/
-let table = [3, 8, 11, 13, 19, 7]/*
+let table = [3, 8, 11, 13, 19, 7]
 Tableau renvoyé par multiplyOddIndices:
   [3, 8, 11, 39, 19, 35]
 */
 
-const multiplyOddIndices = numbers => numbers.map((bla) => {
-  let newItem = (indexOf(bla)%0 === 0) ? bla : bla*indexOf(bla);
-  return newItem;
-});
+const multiplyOddIndices = numbers => numbers.map((value, index) => index%2 == 0 ? value : value*index);
 
 
 
-let machin = multiplyOddIndices(table);
-console.log(machin)
+/*let machin = multiplyOddIndices(table);
+console.log(machin)*/
 
 module.exports = multiplyOddIndices;

@@ -9,15 +9,17 @@ La fonction doit éliminer les commentaires contenant au moins un des mots "bann
 
 Exemple d'entrée:
 1. des commentaires (on est resté soft pour ne pas heurter les oreilles chastes)
-[
+*/
+let table = [
   "Very useful tutorial, thank you so much!",
-  "React is not a damn framework, it's a LIBRARY"
+  "React is not a damn framework, it's a LIBRARY",
   "Why you put bloody kitten pictures in a tech tutorial is beyond me!",
   "Which one is better, React or Angular?",
   'There is no "better", it depends on your use case, DAMN YOU'
-]
-2. mots à bannir: ['bloody', 'damn']
-
+]/*
+2. mots à bannir: */
+let mots = ['bloody', 'damn']
+/*
 Sortie attendue:
 [
   "Very useful tutorial, thank you so much!",
@@ -26,8 +28,13 @@ Sortie attendue:
 
 */
 
-function filterOffensiveComments(comments, bannedWords) {
+const filterOffensiveComments = (comments, bannedWords) => {
+  let newTabTempo = [];
+  newTabTempo.push(comments.filter(bla);
+  return newTabTempo;
 }
 
+let machin = filterOffensiveComments(table, mots)
+console.log(machin)
 // Ne pas modifier l'export
 module.exports = filterOffensiveComments;
