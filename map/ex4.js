@@ -22,7 +22,7 @@ La fonction devra retourner, pour chaque rayon du tableau d'entrée, un objet ay
 où R est le rayon donné en entrée, C et S les valeurs que tu dois calculer.
 
 Exemple de tableau d'entrée :
-
+*/
 let table = [1, 3, 4.5, 7]
 /*
 Tableau de sortie correspondant (toFixed transforme les nombres en chaînes)
@@ -54,16 +54,15 @@ Tableau de sortie correspondant (toFixed transforme les nombres en chaînes)
 const getCirclesProperties = radiuses => radiuses.map(bla => {
   let truc = bla;
   bla = {
-    radius: Math.round(radiuses[radiuses.indexOf(bla)], 3),
-    circumference: Math.floor (2*Math.PI*radiuses[radiuses.indexOf(bla)]),
-    surface: Math.round (Math.PI * radiuses[radiuses.indexOf(bla)]*radiuses[radiuses.indexOf(bla)], 3),
+    radius: Math.round(1000 * radiuses[radiuses.indexOf(bla)])/1000,
+    circumference: Math.round((2*Math.PI*radiuses[radiuses.indexOf(bla)]*1000)) / 1000,
+    surface: Math.round(1000 * Math.PI * radiuses[radiuses.indexOf(bla)]*radiuses[radiuses.indexOf(bla)])/1000,
   };
   //console.log(bla)
   return bla
 })
-/*let machin = getCirclesProperties(table);
-console.log(machin)*/
-let nombre;
+let machin = getCirclesProperties(table);
+console.log(machin)
 
 
 // Ne pas modifier l'export
