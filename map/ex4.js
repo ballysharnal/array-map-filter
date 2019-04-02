@@ -55,14 +55,16 @@ const getCirclesProperties = radiuses => radiuses.map(bla => {
   let truc = bla;
   bla = {
     radius: Math.round(1000 * radiuses[radiuses.indexOf(bla)])/1000,
-    circumference: Math.round((2*Math.PI*radiuses[radiuses.indexOf(bla)]*1000)) / 1000,
-    surface: Math.round(1000 * Math.PI * radiuses[radiuses.indexOf(bla)]*radiuses[radiuses.indexOf(bla)])/1000,
+    circumference: (Math.round((2*Math.PI*radiuses[radiuses.indexOf(bla)]*1000)) / 1000).toString(),
+    surface: (Math.round(1000 * Math.PI * radiuses[radiuses.indexOf(bla)]*radiuses[radiuses.indexOf(bla)])/1000).toString(),
   };
+  console.log(typeof bla.circumference)
   //console.log(bla)
   return bla
 })
 let machin = getCirclesProperties(table);
 console.log(machin)
+
 
 
 // Ne pas modifier l'export
