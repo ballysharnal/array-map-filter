@@ -54,9 +54,9 @@ Tableau de sortie correspondant (toFixed transforme les nombres en chaînes)
 const getCirclesProperties = radiuses => radiuses.map(bla => {
   let truc = bla;
   bla = {
-    radius: Math.round(radiuses[radiuses.indexOf(bla)], 0),
+    radius: Math.round(radiuses[radiuses.indexOf(bla)], 3),
     circumference: Math.round (2*Math.PI*radiuses[radiuses.indexOf(bla)], 0),
-    surface: Math.round (Math.PI * radiuses[radiuses.indexOf(bla)]*radiuses[radiuses.indexOf(bla)], 0),
+    surface: Math.round (Math.PI * radiuses[radiuses.indexOf(bla)]*radiuses[radiuses.indexOf(bla)], 3),
   };
   //console.log(bla)
   return bla
