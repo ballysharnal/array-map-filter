@@ -67,7 +67,7 @@ const getMoviesFreshness = movies => movies.map(bla => {
   }else{
     bla.label = 'certified fresh';
   }
-  return movies
+  return movies[0]
 })
 //let machin = getMoviesFreshness(table)
 //console.log(machin[0])
