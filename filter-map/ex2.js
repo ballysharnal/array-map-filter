@@ -25,11 +25,11 @@ Sortie attendue:
 */
 
 const getCampusesTeachingReact = campuses => {
-  let truc = campuses.map(value => campuses[campuses.indexOf(value)].curriculums.join())
-  console.log(truc)
-  let filtered = campuses.filter(bla => bla.curriculums.indexOf())
+  let tabTarget = campuses.map(value => [value.city,value.curriculums]);
+  tabTarget = tabTarget.filter(value => value[1].includes('JS/React'));
+  let truc = tabTarget.map(value => value[0])
+  return truc
 }
-
 //let machin = getCampusesTeachingReact(table);
 //console.log(machin)
 
