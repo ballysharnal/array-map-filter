@@ -38,14 +38,18 @@ let table = [
 
 
  */
+const capitalize = (s) => {
+  if (typeof s !== 'string') return ''
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
 
 const searchWordFilter = (items, search) => {
   search.toLowerCase();
-  let newTab = items.map(bla => bla.toLowerCase());
-  let newProdTab = items.filter(bla => bla.indexOf(newTab.toLowerCase(search)) != -1);
+  //let newTab = items.map(bla => bla.toLowerCase());
+  let newProdTab = items.filter(bla => (bla.indexOf(search.toLowerCase()) != -1 || bla.indexOf(search.toUpperCase()) != -1) || bla.indexOf(capitalize(search)) != -1);
   return newProdTab;
 }
-let nombre;
+//let nombre;
 //let machin = searchWordFilter(table, 'st')
 //console.log(machin)
 // Ne pas modifier l'export
