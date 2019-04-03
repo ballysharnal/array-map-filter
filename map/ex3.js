@@ -14,7 +14,7 @@ une chaîne, dépendante de la valeur de rating :
 * Si `rating` est compris entre 60 et 75 (inclus), la valeur à attribuer à label sera "fresh".
 * Si `rating` est supérieur à 75, la valeur à attribuer à label sera "certified fresh".
 
-Exemple d'entrée:
+Exemple d'entrée:*/
   let table = [
     {
       name: 'Crazy Rich Asians',
@@ -32,7 +32,7 @@ Exemple d'entrée:
       name: 'White Boy Rick',
       rating: 60
     }
-  ]
+  ]/*
 En sortie:
   [
     {
@@ -59,7 +59,9 @@ En sortie:
 
  */
 
-const getMoviesFreshness = movies => movies.map(bla => {
+const getMoviesFreshness = movies => { 
+  movies.map(bla => {
+
   if (bla.rating < 60){
     bla.label = 'rotten';
   }else if (bla.rating >= 60 && bla.rating <= 75){
@@ -67,10 +69,13 @@ const getMoviesFreshness = movies => movies.map(bla => {
   }else{
     bla.label = 'certified fresh';
   }
-  return movies[0]
+
 })
+
+return movies
+}
 //let machin = getMoviesFreshness(table)
-//console.log(machin[0])
+//console.log(machin)
 
 let nombre;
 // Ne pas modifier l'export
