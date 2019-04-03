@@ -29,8 +29,7 @@ Sortie attendue:
 */
 
 const filterOffensiveComments = (comments, bannedWords) => {
-  let newTabTempo = [];
-  newTabTempo.push(comments.filter(bla));
+  let newTabTempo = comments.filter(bla => bla.indexOf(bannedWords[0]) == -1 && bla.indexOf(bannedWords[1]) == -1);
   return newTabTempo;
 }
 let nombre;
